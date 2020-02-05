@@ -1,0 +1,27 @@
+{
+  "name": "utm-proxy-victor",
+  "version": "1.0.0",
+  "description": "Course Product Page Proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashprotocol/utm-proxy-victor.git"
+  },
+  "author": "Victor Tu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashprotocol/utm-proxy-victor/issues"
+  },
+  "homepage": "https://github.com/dashprotocol/utm-proxy-victor#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2",
+    "react-dom": "^16.12.0"
+  }
+}
