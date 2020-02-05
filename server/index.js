@@ -34,4 +34,15 @@ app.get('/products/7', (req, res) => {
     })
 })
 
+app.get('/test1', (req, res) => {
+  axios.get('http://localhost:3003/test1')
+    .then(function (response) {
+      res.send(response.data);
+    })
+    .catch(function (error) {
+      res.statusCode(500);
+      res.end();
+    })
+})
+
 app.listen(port, () => console.log(`Now listening on port ${port}`));
