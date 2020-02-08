@@ -5,7 +5,6 @@ const morgan = require('morgan');
 const path = require('path');
 const axios = require('axios');
 
-const Feedback = 'http://localhost:3001/';
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public')));
@@ -35,7 +34,7 @@ app.get('/products/7', (req, res) => {
 })
 
 app.get('/test1', (req, res) => {
-  axios.get('http://localhost:3003/test1')
+  axios.get('http://localhost:3011/test1')
     .then(function (response) {
       res.send(response.data);
     })
